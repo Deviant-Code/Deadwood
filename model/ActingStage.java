@@ -2,9 +2,8 @@ package model;
 
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-
-import java.util.Collections;
 import java.util.LinkedList;
+import java.util.Collections;
 import java.util.Stack;
 
 // ActingStage.java

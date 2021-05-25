@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GameController">
+   <children>
+      <VBox prefWidth="1184.0">
+         <children>
+            <StackPane>
+               <children>
+                    <ImageView pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@resources/board.jpg" />
+                        </image>
+                    </ImageView>
+                  <Pane onMouseClicked="#onBoardClicked" prefHeight="900.0" prefWidth="1200.0">
+                     <children>
+                        <Button id="Crusty_Prospector" contentDisplay="GRAPHIC_ONLY" layoutX="115.0" layoutY="228.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Dragged_by_Train" contentDisplay="GRAPHIC_ONLY" layoutX="51.0" layoutY="269.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Preacher_with_Bag" contentDisplay="GRAPHIC_ONLY" layoutX="115.0" layoutY="321.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Cyrus_the_Gunfighter" contentDisplay="GRAPHIC_ONLY" layoutX="50.0" layoutY="356.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Prisoner_in_Cell" contentDisplay="GRAPHIC_ONLY" layoutX="521.0" layoutY="26.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Feller_in_Irons" contentDisplay="GRAPHIC_ONLY" layoutX="520.0" layoutY="106.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Railroad_Worker" contentDisplay="GRAPHIC_ONLY" layoutX="639.0" layoutY="23.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Falls_off_Roof" contentDisplay="GRAPHIC_ONLY" layoutX="721.0" layoutY="23.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Mayor_McGinty" contentDisplay="GRAPHIC_ONLY" layoutX="721.0" layoutY="105.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Woman_in_Black_Dress" contentDisplay="GRAPHIC_ONLY" layoutX="639.0" layoutY="106.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Woman_in_Red_Dress" contentDisplay="GRAPHIC_ONLY" layoutX="879.0" layoutY="276.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Reluctant_Farmer" contentDisplay="GRAPHIC_ONLY" layoutX="879.0" layoutY="353.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Flustered_Teller" contentDisplay="GRAPHIC_ONLY" layoutX="913.0" layoutY="471.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           ></Button>
+                        <Button id="Suspicious_Gentleman" contentDisplay="GRAPHIC_ONLY" layoutX="913.0" layoutY="555.0" onMouseClicked="#onPartClicked" onMousePressed="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Faro_Player" contentDisplay="GRAPHIC_ONLY" layoutX="1045.0" layoutY="511.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Sleeping_Drunkard" contentDisplay="GRAPHIC_ONLY" layoutX="1112.0" layoutY="470.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Falls_from_Balcony" contentDisplay="GRAPHIC_ONLY" layoutX="1112.0" layoutY="558.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Australian_Bartender" contentDisplay="GRAPHIC_ONLY" layoutX="1047.0" layoutY="597.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Man_in_Overalls" contentDisplay="GRAPHIC_ONLY" layoutX="237.0" layoutY="277.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Mister_Keach" contentDisplay="GRAPHIC_ONLY" layoutX="237.0" layoutY="359.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Man_Under_Horse" contentDisplay="GRAPHIC_ONLY" layoutX="489.0" layoutY="526.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Saucy_Fred" contentDisplay="GRAPHIC_ONLY" layoutX="489.0" layoutY="609.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Shot_in_Leg" contentDisplay="GRAPHIC_ONLY" layoutX="413.0" layoutY="609.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Clumsy_Pit_Fighter" contentDisplay="GRAPHIC_ONLY" layoutX="436.0" layoutY="721.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Thug_with_Knife" contentDisplay="GRAPHIC_ONLY" layoutX="523.0" layoutY="721.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Penny,_who_is_lost" contentDisplay="GRAPHIC_ONLY" layoutX="523.0" layoutY="809.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           ></Button>
+                        <Button id="Dangerous_Tom" contentDisplay="GRAPHIC_ONLY" layoutX="436.0" layoutY="809.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Dead_Man" contentDisplay="GRAPHIC_ONLY" layoutX="858.0" layoutY="731.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <Button id="Crying Woman" contentDisplay="GRAPHIC_ONLY" layoutX="860.0" layoutY="811.0" onMouseClicked="#onPartClicked" opacity="0.49" pickOnBounds="true" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #bc7b3a; -fx-background-radius: 7;" textFill="RED">
+                           </Button>
+                        <ImageView id="icon_general_store" fitHeight="43.0" fitWidth="43.0" layoutX="310.0" layoutY="389.0" preserveRatio="true" />
+                        <ImageView id="icon_jail" fitHeight="43.0" fitWidth="43.0" layoutX="393.0" layoutY="186.0" preserveRatio="true" />
+                        <ImageView id="icon_main_street" fitHeight="43.0" fitWidth="43.0" layoutX="1080.0" layoutY="186.0" preserveRatio="true" />
+                        <ImageView id="icon_saloon" fitHeight="43.0" fitWidth="43.0" layoutX="734.0" layoutY="220.0" preserveRatio="true" />
+                        <ImageView id="icon_bank" fitHeight="43.0" fitWidth="43.0" layoutX="849.0" layoutY="483.0" preserveRatio="true" />
+                        <ImageView id="icon_hotel" fitHeight="43.0" fitWidth="43.0" layoutX="1134.0" layoutY="632.0" preserveRatio="true" />
+                        <ImageView id="icon_church" fitHeight="43.0" fitWidth="43.0" layoutX="756.0" layoutY="675.0" preserveRatio="true" />
+                        <ImageView id="icon_secret_hideout" fitHeight="43.0" fitWidth="43.0" layoutX="301.0" layoutY="832.0" preserveRatio="true" />
+                        <ImageView id="icon_casting_office" fitHeight="43.0" fitWidth="43.0" layoutX="170.0" layoutY="548.0" preserveRatio="true" />
+                        <ImageView id="icon_ranch" fitHeight="43.0" fitWidth="43.0" layoutX="289.0" layoutY="641.0" preserveRatio="true" />
+                        <ImageView id="icon_train_station" fitHeight="43.0" fitWidth="43.0" layoutX="29.0" layoutY="220.0" preserveRatio="true" />
+                        <ImageView id="icon_trailer" fitHeight="43.0" fitWidth="43.0" layoutX="1146.0" layoutY="285.0" preserveRatio="true" />
+                        <ImageView id="player_2" fitHeight="43.0" fitWidth="43.0" layoutX="1046.0" layoutY="325.0" preserveRatio="true" />
+                        <ImageView id="player_5" fitHeight="43.0" fitWidth="43.0" layoutX="1001.0" layoutY="372.0" preserveRatio="true" />
+                        <ImageView id="player_6" fitHeight="43.0" fitWidth="43.0" layoutX="1046.0" layoutY="372.0" preserveRatio="true" />
+                        <ImageView id="player_1" fitHeight="43.0" fitWidth="43.0" layoutX="1001.0" layoutY="325.0" preserveRatio="true" />
+                        <ImageView id="player_7" fitHeight="43.0" fitWidth="43.0" layoutX="1091.0" layoutY="372.0" preserveRatio="true" />
+                        <ImageView id="player_3" fitHeight="43.0" fitWidth="43.0" layoutX="1091.0" layoutY="325.0" preserveRatio="true" />
+                        <ImageView id="player_8" fitHeight="43.0" fitWidth="43.0" layoutX="1136.0" layoutY="371.0" preserveRatio="true" />
+                        <ImageView id="player_4" fitHeight="43.0" fitWidth="43.0" layoutX="1136.0" layoutY="324.0" preserveRatio="true" />
+                        <ImageView id="Train_Station" fitHeight="120.0" fitWidth="203.0" layoutX="22.0" layoutY="68.0" onMouseClicked="#onActingStageClicked" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/cards/39.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="Main_Street" fitHeight="120.0" fitWidth="203.0" layoutX="970.0" layoutY="29.0" onMouseClicked="#onActingStageClicked" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/cards/31.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="General_Store" fitHeight="120.0" fitWidth="203.0" layoutX="371.0" layoutY="283.0" onMouseClicked="#onActingStageClicked" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/cards/01.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="Saloon" fitHeight="120.0" fitWidth="203.0" layoutX="633.0" layoutY="282.0" onMouseClicked="#onActingStageClicked" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/cards/12.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="Ranch" fitHeight="120.0" fitWidth="203.0" layoutX="252.0" layoutY="479.0" onMouseClicked="#onActingStageClicked" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/cards/01.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="Bank" fitHeight="120.0" fitWidth="203.0" layoutX="624.0" layoutY="476.0" onMouseClicked="#onActingStageClicked" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/cards/01.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="Church" fitHeight="120.0" fitWidth="203.0" layoutX="624.0" layoutY="736.0" onMouseClicked="#onActingStageClicked" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/cards/01.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="Hotel" fitHeight="120.0" fitWidth="203.0" layoutX="971.0" layoutY="741.0" onMouseClicked="#onActingStageClicked" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/cards/01.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="Secret_Hideout" fitHeight="120.0" fitWidth="203.0" layoutX="27.0" layoutY="734.0" onMouseClicked="#onActingStageClicked" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/cards/01.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="Jail" fitHeight="120.0" fitWidth="203.0" layoutX="283.0" layoutY="28.0" onMouseClicked="#onActingStageClicked" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/cards/39.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="train_station_3" fitHeight="57.0" fitWidth="58.0" layoutX="30.0" layoutY="4.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/redmarker.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="train_station_2" fitHeight="57.0" fitWidth="58.0" layoutX="83.0" layoutY="4.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/redmarker.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="train_station_1" fitHeight="57.0" fitWidth="58.0" layoutX="136.0" layoutY="4.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/redmarker.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="secret_hideout_3" fitHeight="57.0" fitWidth="58.0" layoutX="239.0" layoutY="758.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/redmarker.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="secret_hideout_2" fitHeight="57.0" fitWidth="58.0" layoutX="293.0" layoutY="757.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/redmarker.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="secret_hideout_1" fitHeight="57.0" fitWidth="58.0" layoutX="348.0" layoutY="757.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/redmarker.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="main_street_1" fitHeight="57.0" fitWidth="58.0" layoutX="798.0" layoutY="16.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/redmarker.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="main_street_2" fitHeight="57.0" fitWidth="58.0" layoutX="852.0" layoutY="16.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/redmarker.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="main_street_3" fitHeight="57.0" fitWidth="58.0" layoutX="905.0" layoutY="16.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/redmarker.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="hotel_3" fitHeight="57.0" fitWidth="58.0" layoutX="999.0" layoutY="677.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/redmarker.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="hotel_2" fitHeight="57.0" fitWidth="58.0" layoutX="1052.0" layoutY="677.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/redmarker.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="hotel_1" fitHeight="57.0" fitWidth="58.0" layoutX="1105.0" layoutY="677.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/redmarker.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="church_2" fitHeight="57.0" fitWidth="58.0" layoutX="617.0" layoutY="669.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/redmarker.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="church_1" fitHeight="57.0" fitWidth="58.0" layoutX="676.0" layoutY="669.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/redmarker.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="ranch_2" fitHeight="57.0" fitWidth="58.0" layoutX="466.0" layoutY="466.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/redmarker.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="ranch_1" fitHeight="57.0" fitWidth="58.0" layoutX="520.0" layoutY="466.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/redmarker.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="saloon_2" fitHeight="57.0" fitWidth="58.0" layoutX="619.0" layoutY="209.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/redmarker.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="saloon_1" fitHeight="57.0" fitWidth="58.0" layoutX="673.0" layoutY="210.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/redmarker.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="jail_1" fitHeight="57.0" fitWidth="58.0" layoutX="437.0" layoutY="149.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/redmarker.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="general_store_2" fitHeight="57.0" fitWidth="58.0" layoutX="307.0" layoutY="271.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/redmarker.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="general_store_1" fitHeight="57.0" fitWidth="58.0" layoutX="307.0" layoutY="323.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/redmarker.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="bank_1" fitHeight="57.0" fitWidth="58.0" layoutX="834.0" layoutY="542.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/redmarker.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <HBox prefWidth="1184.0">
+               <children>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="500.0" style="-fx-background-color: #AD7447;">
+                     <children>
+                        <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" prefHeight="82.0" prefWidth="372.0">
+                           <children>
+                              <Text boundsType="LOGICAL_VERTICAL_CENTER" fill="#2e2e2d" nodeOrientation="LEFT_TO_RIGHT" strokeType="INSIDE" strokeWidth="0.0" text="Current Day: " wrappingWidth="202.8155975341797">
+                                 <font>
+                                    <Font name="Keraleeyam" size="45.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text id="current_day" boundsType="LOGICAL_VERTICAL_CENTER" fill="#2f2e2e" nodeOrientation="LEFT_TO_RIGHT" strokeType="INSIDE" textAlignment="CENTER" wrappingWidth="33.42430114746094">
+                                 <font>
+                                    <Font name="Keraleeyam" size="45.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                        <JFXTextArea id="output_field" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" opacity="0.8" prefColumnCount="0" prefHeight="98.0" prefWidth="329.0" style="-fx-background-color: #cda882;" text="This is where we can display output to the user. I.e. most of the prompts we are dishing out on the command line will just go here. #id=&quot;output_field&quot;">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Keraleeyam" size="20.0" />
+                           </font>
+                        </JFXTextArea>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="180.0" prefWidth="1336.0" style="-fx-background-color: #AD7447;">
+                     <children>
+                        <Text fill="#fbf5f1" strokeType="OUTSIDE" strokeWidth="0.0" text="Advanced Controls" textAlignment="CENTER" wrappingWidth="643.69287109375">
+                           <font>
+                              <Font name="Keraleeyam" size="50.0" />
+                           </font>
+                        </Text>
+                        <GridPane hgap="15.0" prefHeight="240.0" prefWidth="644.0" vgap="15.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <JFXButton id="skip_day" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onSkipDay" text="Skip Day" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                 <font>
+                                    <Font name="Keraleeyam" size="32.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets />
+                                 </GridPane.margin>
+                              </JFXButton>
+                              <JFXButton id="skip_turn" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#onSkipTurn" prefHeight="100.0" prefWidth="322.0" text="Skip Turn" textAlignment="CENTER" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="Keraleeyam" size="32.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton id="return_menu" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#onReturn" prefHeight="100.0" prefWidth="322.0" text="Return to Main Menu" textAlignment="CENTER" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Keraleeyam" size="32.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXToggleButton id="force_succeed" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#onToggle" prefHeight="72.0" prefWidth="322.0" text="Force Succeed" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Keraleeyam" size="32.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets />
+                                 </GridPane.margin>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </JFXToggleButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </GridPane>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="1200.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="725.0" style="-fx-background-color: #AD7447;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FBF5F1;" text="DeadWood" textAlignment="CENTER" underline="true" wrappingWidth="481.69287109375">
+               <font>
+                  <Font name="Keraleeyam" size="96.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="#fbf5f1" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Info" textAlignment="CENTER" wrappingWidth="481.69287109375">
+               <font>
+                  <Font name="Keraleeyam" size="60.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Text>
+            <GridPane hgap="20.0" vgap="15.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Active Player:">
+                     <font>
+                        <Font name="Keraleeyam" size="45.0" />
+                     </font>
+                  </Text>
+                  <Text id="active_player" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Credits:" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Keraleeyam" size="45.0" />
+                     </font>
+                  </Text>
+                  <Text id="credits" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dollars:" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Keraleeyam" size="45.0" />
+                     </font>
+                  </Text>
+                  <Text boundsType="VISUAL" strokeType="OUTSIDE" strokeWidth="0.0" text="Rehearsal Chips:" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Keraleeyam" size="45.0" />
+                     </font>
+                  </Text>
+                  <Text boundsType="VISUAL" strokeType="OUTSIDE" strokeWidth="0.0" text="Location: " GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Keraleeyam" size="45.0" />
+                     </font>
+                  </Text>
+                  <Text boundsType="VISUAL" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Role:" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Keraleeyam" size="45.0" />
+                     </font>
+                  </Text>
+                  <Text id="dollars" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Text id="chips" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Text id="location" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Text id="current_role" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="150.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="20.0" />
+               </VBox.margin>
+            </GridPane>
+            <Text fill="#fbf5f1" strokeType="OUTSIDE" strokeWidth="0.0" text="Turn Options" textAlignment="CENTER" wrappingWidth="481.69287109375">
+               <font>
+                  <Font name="Keraleeyam" size="60.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Text>
+            <JFXButton id="button_act" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onActClicked" style="-fx-border-color: #FBF5F1; -fx-background-color: #f5e8df;" text="Act">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Keraleeyam" size="30.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="button_rehearse" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onRehearseClicked" style="-fx-border-color: #FBF5F1; -fx-background-color: #f5e8df;" text="Rehearse">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Keraleeyam" size="30.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="button_end_turn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onEndTurn" style="-fx-border-color: #FBF5F1; -fx-background-color: #f5e8df;" text="End Turn">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Keraleeyam" size="30.0" />
+               </font>
+            </JFXButton>
+            <Text fill="#fbf5f1" strokeType="OUTSIDE" strokeWidth="0.0" text="Upgrade Station" textAlignment="CENTER" wrappingWidth="481.69287109375">
+               <font>
+                  <Font name="Keraleeyam" size="60.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Text>
+            <GridPane alignment="CENTER" hgap="10.0" prefHeight="143.0" prefWidth="725.0" vgap="10.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="240.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="240.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="240.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXRadioButton id="toggle_rank_2" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" selected="true" text="Rank 2" GridPane.halignment="CENTER">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="toggle_rank" />
+                     </toggleGroup>
+                     <font>
+                        <Font name="Keraleeyam" size="34.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXRadioButton id="toggle_rank_3" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Rank 3" toggleGroup="$toggle_rank" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Keraleeyam" size="34.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXRadioButton id="toggle_rank_4" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Rank 4" toggleGroup="$toggle_rank" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Keraleeyam" size="34.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXRadioButton id="toggle_rank_5" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Rank 5" toggleGroup="$toggle_rank" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                     <font>
+                        <Font name="Keraleeyam" size="34.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXRadioButton id="toggle_rank_6" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="556.0" text="Rank 6" toggleGroup="$toggle_rank" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Keraleeyam" size="34.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXRadioButton id="toggle_dollars" prefHeight="25.0" prefWidth="109.0" selected="true" text="Dollars" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Keraleeyam" size="34.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="toggle_dollars" />
+                     </toggleGroup>
+                  </JFXRadioButton>
+                  <JFXRadioButton id="toggle_credits" text="Credits" toggleGroup="$toggle_dollars" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Keraleeyam" size="34.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXButton id="confirm_upgrade" alignment="CENTER" buttonType="RAISED" nodeOrientation="LEFT_TO_RIGHT" onAction="#onUpgradeClicked" prefHeight="32.0" prefWidth="116.0" ripplerFill="#110600" style="-fx-background-color: #f5e8df;" text="Confirm" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BASELINE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Text boundsType="VISUAL" fill="#fbf5f1" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost:   " textAlignment="CENTER" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Keraleeyam" size="34.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="38.0" top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text id="upgrade_cost" boundsType="VISUAL" fill="#057505" strokeType="OUTSIDE" strokeWidth="0.0" text=" " textAlignment="CENTER" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Keraleeyam" size="34.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="38.0" top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </GridPane>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="352.3333740234375" minWidth="10.0" prefWidth="217.6666259765625" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="510.0" minWidth="10.0" prefWidth="507.3333740234375" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Current Rank: ">
+                     <font>
+                        <Font name="Keraleeyam" size="45.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="40.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text id="current_rank" strokeType="OUTSIDE" strokeWidth="0.0" text="1" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="25.0" />
+                     </GridPane.margin>
+                  </Text>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</Pane>
